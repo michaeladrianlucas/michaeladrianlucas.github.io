@@ -1,0 +1,196 @@
+.plane {
+  align-items: center;
+  -webkit-animation: turbulence 4s ease-in-out infinite;
+          animation: turbulence 4s ease-in-out infinite;
+  display: flex;
+  height: 25%;
+  justify-content: center;
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 50%;
+  width: 80%;
+  margin: auto;
+background: rgba(0,0,0,0);
+}
+.plane:before {
+  background-color: #FAFAFA;
+  border-bottom-left-radius: 50% 60px;
+  border-bottom-right-radius: 50% 60px;
+  border-bottom: 2px solid #c7c7c7;
+  border-top-left-radius: 60px 50%;
+  border-top-right-radius: 60px 50%;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  height: 25px;
+  position: absolute;
+  top: calc( 50% - 80px);
+  width: 100%;
+}
+
+.propeller:before,
+.propeller:after {
+  background-color: black;
+  border-radius: 50%;
+  content: '';
+  display: block;
+}
+
+.propeller {
+  -webkit-animation: propel 1s infinite linear;
+          animation: propel 1s infinite linear;
+  background-color: #000f29;
+  border-radius: 50%;
+  bottom: 10px;
+  height: 25px;
+  left: 50%;
+  position: absolute;
+  width: 25px;
+}
+
+.propeller:before {
+  background-color: rgba(0, 15, 41, 0.9);
+  height: 25px;
+  left: -105px;
+  position: absolute;
+  width: 100px;
+}
+
+.propeller:after {
+  background-color: rgba(0, 15, 41, 0.9);
+  height: 25px;
+  left: 30px;
+  position: absolute;
+  width: 100px;
+}
+
+.window {
+  background-color: #ccdbf5;
+  border-radius: 40px;
+  border-bottom-left-radius: 80px 40%;
+  border-bottom-right-radius: 80px 40%;
+  height: 80px;
+  left: 50%;
+  position: relative;
+  top: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 180px;
+}
+
+.fuselage {
+  background-color: #FAFAFA;
+  border-bottom-left-radius: 200px 120px;
+  border-bottom-right-radius: 200px 120px;
+  border-top-left-radius: 100px 80px;
+  border-top-right-radius: 100px 80px;
+  border: 1px solid #ccc;
+  border-bottom: 30px solid #1c5fd4;
+  box-sizing: border-box;
+  height: 195px;
+  position: relative;
+  top: -50px;
+  width: 200px;
+}
+.fuselage:before {
+  background-color: #1c5fd4;
+  bottom: 40px;
+  content: '';
+  display: block;
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 200px;
+}
+
+.rutter {
+  background-color: #FAFAFA;
+  border-top-left-radius: 45% 80%;
+  border-top-right-radius: 45% 80%;
+  border: 1px solid #ccc;
+  bottom: 100%;
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+}
+
+@-webkit-keyframes turbulence {
+  0% {
+    top: 0px;
+  }
+  25% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  50% {
+    top: -10px;
+  }
+  75% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes turbulence {
+  0% {
+    top: 0px;
+  }
+  25% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  50% {
+    top: -10px;
+  }
+  75% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  100% {
+    top: 0px;
+  }
+}
+@-webkit-keyframes propel {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(360deg);
+            transform: translateX(-50%) rotate(360deg);
+  }
+}
+@keyframes propel {
+  0% {
+    -webkit-transform: translateX(-50%) rotate(0deg);
+            transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) rotate(360deg);
+            transform: translateX(-50%) rotate(360deg);
+  }
+}
+body {
+  /*
+  align-items: center;
+  background-color: lightblue;
+  background-image: url("https://cjo.me/MOqP1erfh2.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  */
+}
