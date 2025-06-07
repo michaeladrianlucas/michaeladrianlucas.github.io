@@ -1,0 +1,145 @@
+*{
+  box-sizing: border-box !important;
+}
+a {
+  color:teal;
+}
+.logo {
+  position: absolute;
+  top:0;
+  left:0;
+  color: #FFF;
+  background: teal;
+  text-align: right;
+  width: 160px;
+  padding: 20px;
+}
+
+.bg-2 {
+  background: #89daff;
+  background-color: #DDD;
+}
+
+.bg {
+    background: #efefd0;
+    
+}
+
+.bg::after{
+  /*
+  content: '';
+  position:absolute;
+  top:10vh;
+  bottom:10vh;
+  left: 10%;
+  right: 60%;
+  background: rgba(255, 0, 0, 0.5);
+*/
+}
+
+.jumbotron {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-bottom: 0;
+}
+
+.bio {
+  font-size: 1.2em;
+  padding: 0;
+}
+
+.caps {
+  font-weight: 100;
+  font-size: 4.5em;
+  border: solid 1px #666;
+  color: #666;
+  margin: 0;
+  padding: 0.15em;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+
+
+@media (min-width: 1000px) {
+
+.heading-about {
+  font-size: 4rem;
+}
+.heading {
+   font-size: 3rem;
+  }
+}
+
+.headshot {
+  position: absolute;
+  bottom: 10vh;
+  right:0;
+
+}
+
+
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.circle-box {
+  position: relative;
+  height: 60vh;
+  background: teal;
+  width: 90vh;
+  top: 0;
+  left:10vh;
+  display: inline-block;
+}
+
+.circle {
+  height: 60vh;
+  width: 60vh;
+  background: salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000000px;
+  position: relative;
+  top: 20vh;
+  right: 15vh;
+
+
+}
+.footer {
+
+}
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+}
+
+footer p {
+  margin-bottom: 0;
+  color: teal;
+}
